@@ -4,6 +4,7 @@ import com.counts.ExamineeCountDateTimeWiseCounts.dto.requestDto.SemesterRequest
 import com.counts.ExamineeCountDateTimeWiseCounts.dto.responseDto.SemesterResponseDto;
 import com.counts.ExamineeCountDateTimeWiseCounts.entity.Semester;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 import java.util.List;
 

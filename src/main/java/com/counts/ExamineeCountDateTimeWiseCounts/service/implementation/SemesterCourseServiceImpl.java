@@ -50,7 +50,7 @@ public class SemesterCourseServiceImpl implements SemesterCourseService {
         Semester semester = semesterRepository.findById(semesterId).orElseThrow(()-> new EntityNotFoundException("Semester not found"));
         Course course = courseMapper.toCourse(courseRequestDto);
         course.setSem(semester);
-        semester.setCourses(List.of(course));
+        semester.getCourses().add(course);
         return courseMapper.toCourseResponseDto(courseRepository.save(course));
     }
 

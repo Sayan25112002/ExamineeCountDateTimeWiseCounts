@@ -34,7 +34,7 @@ public class Course {
 
     private String totalStudent;
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
     @JsonIgnore
     private Semester sem;
 

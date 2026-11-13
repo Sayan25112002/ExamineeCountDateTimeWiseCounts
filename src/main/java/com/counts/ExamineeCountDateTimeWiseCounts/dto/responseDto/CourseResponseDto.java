@@ -33,6 +33,4 @@ public class CourseResponseDto {
 
     private String totalStudent;
 
-    private SemesterResponseDto sem;
-
 }
