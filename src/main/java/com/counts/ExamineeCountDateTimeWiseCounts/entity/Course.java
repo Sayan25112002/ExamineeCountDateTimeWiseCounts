@@ -32,10 +32,10 @@ public class Course {
 
     private String paperNature;
 
+    private String totalStudent;
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JsonIgnore
     private Semester sem;
-
-    private String totalStudent;
 
 }
